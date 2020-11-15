@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory</title>
+    <link rel="stylesheet" href="sliderstyling.css">
+    <link rel="stylesheet" href="grid_easy.css">
+    <link rel="stylesheet" href="modalstyles.css">
+    <link rel="stylesheet" href="gamestyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <audio id="myaudio" autoplay="autoplay" loop="loop" src="music/bensoundukulele.mp3" type="audio/mp3"></audio>
+    <div class="wrapper">
+        <div class="scorecountcontainer">
+            <div class="movecountbox">
+                <p class="moves" id="movecounter">
+                    
+                </p>
+            </div>
+                <input type="range" min="0" max="100" step="1" value="50" id="vol-control" class="slider"></input>
+            <div class="timerbox">
+                <p class="timer" id="timecounter">
+                    00 : 00 : 00
+                </p>
+            </div>
+        </div>
+
+        <div id="gridcontainer" class="rownumber">
+            <div id="item0"></div>
+            <div id="item1"></div>
+            <div id="item2"></div>
+            <div id="item3"></div>
+            <div id="item4"></div>
+            <div id="item5"></div>
+            <div id="item6"></div>
+            <div id="item7"></div>
+            <div id="item8"></div>
+            <div id="item9"></div>
+            <div id="item10"></div>
+            <div id="item11"></div>
+            <div id="item12"></div>
+            <div id="item13"></div>
+            <div id="item14"></div>
+            <div id="item15"></div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+
+        <div class="modal-header">
+            <div class="title">Click play to start</div>
+        </div>
+        <div class="modal-body">
+            <button id="playbutton">play</button>            
+        </div>
+
+    </div>
+    <div id="overlay"></div>
+
+    <div class="scoremodal" id="scoremodal">
+
+        <div class="scoremodal-header">
+            <div class="scoremodal-title">score</div>
+        </div>
+        <div class="difficulty-header">
+            <div id="difficulty">score</div>
+        </div>
+        <div class="scoreboard" id="scoreboard">
+            <p class="timeplayed" id="time"></p>
+            <p class="timeplayed" id="record"></p>
+        </div>
+        <div class="scoremodal-body">
+            <button id="retry">try again</button>
+            <button id="mainmenu">back to menu</button>            
+        </div>
+        <div class="credits">
+            <a class="creditlink" href="https://www.freepik.com/vectors/nature" target="_blank">Nature vector created by freepik - www.freepik.com</a><br>
+            <a class="creditlink" href="https://www.freepik.com/vectors/design" target="_blank">Design vector created by freepik - www.freepik.com</a><br>
+            <a class="creditlink" href="https://www.freepik.com/vectors/bird" target="_blank">Bird vector created by freepik - www.freepik.com</a><br>
+            <a class="creditlink" href="https://www.freepik.com/vectors/cartoon" target="_blank">Cartoon vector created by freepik - www.freepik.com</a><br>
+        </div>
+
+    </div>
+    <div id="overlay2"></div>
+
+    <script src="scriptsaudio.js"></script>
+    <script src="scoresystems.js"></script>
+    <script src="myapp.js"></script>
+</body>
+</html>

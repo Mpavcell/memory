@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Menu</title>
+    <link rel="stylesheet" href="stylemainmenu.css">
+    <link rel="stylesheet" href="sliderstyling.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    
+    <audio id="myaudio" autoplay="autoplay" loop="loop" src="music/bensoundukulele.mp3" type="audio/mp3"></audio>
+    
+    <!--main menu-->
+
+    <div class="menuwrapper">
+        <div class="menu">
+            <div class="headbox">               
+                <h1 class="headtext">
+                    Menu
+                </h1>                
+            </div>
+            
+            <div class="setgamemodes">
+                <input type="range" min="0" max="100" step="1" value="30" id="vol-control" class="slider"></input>
+                <div id="themeselector">
+                    <div class="themeselecttext">select theme</div>
+                    <div id="themechoicebox">
+                        <div class="themechoice" id="animals"></div>
+                        <div class="themechoice" id="nature"></div>
+                    </div>
+                </div>
+                <div class="difficultyselecttext">select difficulty</div>
+                <div href="game/game_easy.html" class="choice" id="easy">easy</div>
+                <div href="game/game.html" class="choice" id="medium">normal</div>
+                <div href="game/game_hard.html" class="choice" id="hard">hard</div>
+                <div class="border"></div>
+                <div id="playbutton">play</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="modal">
+
+        <div class="modal-header">
+            <div class="title">Please select a theme and difficulty setting!</div>
+        </div>
+        <div class="modal-body">
+            <button id="closemodal">back</button>            
+        </div>
+
+    </div>
+    <div id="overlay"></div>
+
+    <script src="scriptsaudio.js"></script>
+    <script src="setdifficulty.js"></script>
+</body>

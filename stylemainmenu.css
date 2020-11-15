@@ -1,0 +1,354 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: grid; /* remove later*/
+    grid-template-columns: 1fr 360 1fr; /*remove later*/ 
+    /*note: last 2 lines are just for desktop preview aesthetics
+    should be made abundant with media queries*/
+}
+
+.menuwrapper {
+    margin-top: 20px; /*should be removed after media queries*/
+    grid-column: 2/3; /*note: same as in the above note applies for the first 2 lines here*/
+    display: grid;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+.menu {
+    background-color:#66E5D2;    
+    width: 360px;
+    height: 850px;
+    border: 1px solid black;
+}
+
+.headbox {
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 20px;
+    background-color: #1B98EA;
+}
+
+.headbox h1 {
+    padding-bottom: 20px;
+    font-family: inherit;
+    font-size: 1em;
+    color: white;
+}
+
+.setgamemodes {
+    text-align: center;
+    background-color: #66E5D2;
+    height: 90.4%;
+
+    display: grid;
+    grid-template-rows: 1.12fr 2.5fr 0.5fr 0.75fr 0.5fr 0.75fr 0.5fr 0.75fr 1fr 1.12fr 0.5fr;
+    grid-template-columns: 1fr 1fr 75% 1fr 1fr
+}
+
+h2 {
+    padding-bottom: 10px;
+}
+
+br {
+    text-decoration: none;
+    margin-bottom: 7px
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+
+input {
+    grid-column: 2 / 5;
+}
+
+#themeselector {
+    height: 210px;
+    box-sizing: border-box;
+    
+    grid-column: 1 / 6;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-rows: 0.5fr 4fr;
+    
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+
+.themeselecttext {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    padding-top: 15px;
+}
+
+.difficultyselecttext {
+    grid-row: 3 / 4;
+    grid-column: 2 / 5;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    padding: 20px 0px;
+}
+
+#themechoicebox {
+    width: 300px;
+    height: 135px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    padding: 15px;
+    justify-self: center;
+}
+
+#animals {
+    border: 1px solid white;
+    border-radius: 25%;
+    background-position: center;
+    background-image: url(animals.jpg), url(animals-selected.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#nature {
+    border: 1px solid white;
+    border-radius: 25%;
+    background-position: center;
+    background-image: url(nature.jpg), url(nature-selected.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#animals:hover,
+#nature:hover {
+    border: 5px solid lightgreen;
+    cursor: default;
+    box-shadow: 0px 0px 9px 0px rgba(117,117,117,0.75);
+}
+
+
+#easy {
+    background-color: #F0A403;
+    grid-row: 4 / 5;
+    grid-column: 3/4;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: black;
+    border: 1px solid white;
+}
+
+#medium {
+    background-color: #2FA64A;
+    grid-row: 6 / 7;
+    grid-column: 3/4;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: black;
+    border: 1px solid white;
+}
+
+#hard {
+    background-color: #E82301;
+    grid-row: 8 / 9;
+    grid-column: 3/4;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: black;
+    border: 1px solid white;
+}
+
+.border {
+    margin-top: 30px;
+    grid-row: 9 / 10;
+    grid-column: 1 / 6;
+    border-top: 1px solid white;
+}
+
+#playbutton {
+    background-color: #1B98EA;
+    grid-row: 10 / 11;
+    grid-column: 3/4;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: black;
+    border: 1px solid white;
+}
+
+#medium:hover,
+#hard:hover,
+#easy:hover {
+    border: 3px solid lightgreen;
+    cursor: default;
+    box-shadow: 0px 0px 9px 0px rgba(117,117,117,0.75);
+}
+
+#playbutton:hover {
+    border: 5px solid rgb(255, 255, 255);
+    cursor: default;
+}
+
+
+/* modal:
+    this modal loads when the player clicks the play button
+    without first selecting theme and/or difficulty setting
+*/
+
+.modal {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 5px solid white;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: #66E5D2;
+    width: 300px;
+    max-width: 80%;
+    box-shadow: 0px 0px 9px 0px rgba(117,117,117,0.75)
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal .modal-body {
+    text-align: center;
+    padding: 20px 15px 20px 15px;
+    margin: auto;
+    width: 200px;
+}
+
+.modal .modal-body button {
+    width: 100%;
+    height: 70px;
+    background-color: #E82301;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: black;
+    border: 1px solid white;
+    cursor: default;
+}
+
+.modal .modal-body button:hover {
+    background-color: #2FA64A;
+    border: 3px solid lightgreen;
+    cursor: default;
+    box-shadow: 0px 0px 9px 0px rgba(117,117,117,0.75);
+}
+
+.modal-header {
+    background-color: #1B98EA;
+    padding: 15px 15px 15px 15px;
+    text-align: center;
+}
+
+.modal-header .title {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.10rem;
+    font-weight: bold;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(27, 151, 234, 0.25);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* MEDIA QUERIES FOR DESKTOP */
+
+@media screen and (min-height: 800px) and (max-height: 1000px){
+
+.menu {
+    height: 650px; 
+    border: none
+}
+
+.headbox {
+    padding-top: 16px;
+    margin: 0;
+}
+
+.headbox h1 {
+    padding-bottom: 16px;
+}
+
+.setgamemodes {
+    height: 100%;
+    text-align: center;
+    background-color: #66E5D2;
+
+    display: grid;
+    grid-template-rows: 1.12fr 2.5fr 0.5fr 0.75fr 0.5fr 0.75fr 0.5fr 0.75fr 1fr 1.12fr 0.5fr;
+    grid-template-columns: 1fr 1fr 75% 1fr 1fr
+}
+
+#themeselector {
+    margin-top: 15px;
+}
+
+.difficultyselecttext {
+    padding: 16px 0px;
+}
+
+#easy,
+#medium {
+    margin-bottom: 10px;
+}
+#hard {
+    margin-bottom: 0px;
+}
+
+.border {
+    margin-top: 15px;
+}
+
+#playbutton {
+    margin: 15px 0px;
+}
+
+}

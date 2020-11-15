@@ -1,0 +1,22 @@
+For: websites, social media, blogs, ebooks, newsletters, etc.
+
+Copy this link and paste it wherever it's visible, close to where you’re using the resource. 
+If that's not possible, place it at the footer of your website, blog or newsletter, or in the credits section.
+
+--
+
+For: Apps, games, desktop apps, etc.
+
+Paste this link on the website where your app is available for download or in the description section of the platform 
+or marketplace you’re using.
+
+
+<a href='https://www.freepik.com/vectors/nature'>Nature vector created by freepik - www.freepik.com</a>
+<a href="https://www.freepik.com/vectors/nature">Nature vector created by freepik - www.freepik.com</a>
+<a href="https://www.freepik.com/vectors/design">Design vector created by freepik - www.freepik.com</a>
+<a href="https://www.freepik.com/vectors/design">Design vector created by freepik - www.freepik.com</a>
+<a href="https://www.freepik.com/vectors/bird">Bird vector created by freepik - www.freepik.com</a>
+<a href="https://www.freepik.com/vectors/design">Design vector created by freepik - www.freepik.com</a>
+<a href="https://www.freepik.com/vectors/design">Design vector created by freepik - www.freepik.com</a>
+<a href="https://www.freepik.com/vectors/cartoon">Cartoon vector created by freepik - www.freepik.com</a>
+

@@ -1,0 +1,128 @@
+/* nature memory card images and properties */
+
+.class0 {
+    background-image: url(img/F8F8FF.png), url(img/cards/class0.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 100%;
+    border-radius: 30%;
+    border: 2px solid white;
+}
+
+
+.class1 {
+    background-image: url(img/F8F8FF.png), url(img/cards/class1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    border-radius: 30%;
+    border: 2px solid white;
+}
+.class2 {
+    background-image: url(img/F8F8FF.png), url(img/cards/class2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 30%;
+    border: 2px solid white;
+}
+.class3 {
+    background-image: url(img/F8F8FF.png), url(img/cards/class3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 30%;
+    border: 2px solid white;
+}
+.class4 {
+    background-image: url(img/F8F8FF.png), url(img/cards/class4.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 30%;
+    border: 2px solid white;
+}
+.class5 {
+    background-image: url(img/F8F8FF.png), url(img/cards/class5.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 30%;
+    border: 2px solid white;
+}
+.class6 {
+    background-image: url(img/F8F8FF.png), url(img/cards/class6.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 30%;
+    border: 2px solid white;
+}
+.class7 {
+    background-image: url(img/F8F8FF.png), url(img/cards/class7.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 30%;
+    border: 2px solid white;
+}
+.class8 {
+    background-image: url(img/F8F8FF.png), url(img/cards/class8.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 30%;
+    border: 2px solid white;
+}
+.class9 {
+    background-image: url(img/F8F8FF.png), url(img/cards/class9.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 30%;
+    border: 2px solid white;
+}
+.class10 {
+    background-image: url(img/F8F8FF.png), url(img/cards/class10.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 30%;
+    border: 2px solid white;
+}
+.class11 {
+    background-image: url(img/F8F8FF.png), url(img/cards/class11.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 30%;
+    border: 2px solid white;
+}
+.class12 {
+    background-image: url(img/F8F8FF.png), url(img/cards/class12.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 30%;
+    border: 2px solid white;
+}
+.class13 {
+    background-image: url(img/F8F8FF.png), url(img/cards/class13.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 30%;
+    border: 2px solid white;
+}
+.class14 {
+    background-image: url(img/F8F8FF.png), url(img/cards/class14.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 30%;
+    border: 2px solid white;
+}
+
+.class0:hover,
+.class1:hover,
+.class2:hover,
+.class3:hover,
+.class4:hover,
+.class5:hover,
+.class6:hover,
+.class7:hover,
+.class8:hover,
+.class9:hover,
+.class10:hover,
+.class11:hover,
+.class12:hover,
+.class13:hover,
+.class14:hover,
+.class15:hover {
+    border: 1px solid gray;
+}
